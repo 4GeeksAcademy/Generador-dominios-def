@@ -5,23 +5,23 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-   let pronoun = ["my", "the", "our", "your", "super"];
-  let adj = ["fast", "crazy", "silent", "bright", "wild"];
+// Dar formato al código
+
+window.onload = function () {
+
+  let pronoun = ["my", "the", "our", "your", "super"];
+  let adjetive = ["fast", "crazy", "silent", "bright", "wild"];
   let noun = ["tiger", "planet", "coder", "pirate", "dream"];
   let extension = [".com", ".es", ".org", ".net", ".eu"]
 
-for ( let p = 0; p < pronoun.length; p++){
-  for (let a = 0; a < adj.length; a++){
-    for (let n = 0; n < noun.length; n++){
-      for (let e = 0; e < extension.length; e++){
-console.log(pronoun[p] + adj[a] + noun[n] + extension[e])
+  // Cambio de nombre de variables
+  for (let pro = 0; p < pronoun.length; p++) {
+    for (let adj = 0; a < adjetive.length; a++) {
+      for (let n = 0; n < noun.length; n++) {
+        for (let ext = 0; e < extension.length; e++) {
+          console.log(pronoun[pro] + adjetive[adj] + noun[n] + extension[ext])
+        }
       }
-
     }
   }
-}
-
-  console.log("Hello Rigo from the console!");
 };
